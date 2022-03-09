@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<link rel="icon" type="img/icon" href="https://raw.githubusercontent.com/MhmmdSyahputra/fun-y-n/main/PT-logo.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- fontawasome -->
+    <script src="https://kit.fontawesome.com/f9e187ccca.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+		@media (min-width: 320px) and (max-width: 480px) {
+		  .col-md-3{
+		  	width: 50%;
+		  }
+		}
+
+    	body{
+    		background-color: #f0f0f0;
+    	}
+    	.card-title{
+    		color: #212529;
+    	}
+    	.card, .card-body, .card-img-top{
+    		border-radius: 25px;
+    	}
+
+    	.card-img-top{
+    		filter: brightness(50%);
+    	}
+
+    	a{
+    		color: #183153;
+    	}
+
+    	.line{
+    		width: 10%;
+    		text-align: center;
+    	}
+
+    </style>
+
+    <title>Call Me PT</title>
+  </head>
+  <body>
+
+
+  	<div id="app">
+  		<!-- header -->
+	  	<header-componen></header-componen>
+	  	<br><br><br><br>
+	  	<div class="container">
+	  		<div class="row mb-4">	
+
+		  		<div class="col-md-3 mb-4">
+		  			<a href="https://ya-or-no-pt.netlify.app/" class="text-decoration-none" target="_blank">
+			  			<div class="card shadow" style="background-color: #6BB3DA;">
+							<img src="img/minta-maaf.png" class="card-img-top img-fluid p-2" alt="...">
+							<div class="card-body" style="background-color:#6BB3DA;">
+						    	<h4 class="card-title">Minta Maaf</h4>
+						  	</div>
+						</div>
+					</a>
+		  		</div>
+
+		  		<div class="col-md-3 mb-4">
+		  			<a href="http://text-jalan-pt.netlify.com/" class="text-decoration-none" target="_blank">
+			  			<div class="card shadow" style="background-color: #6BB3DA;">
+							<img src="img/text-jalan.png" class="card-img-top img-fluid p-2" alt="...">
+							<div class="card-body" style="background-color:#6BB3DA;">
+						    	<h4 class="card-title">Text Jalan</h4>
+						  	</div>
+						</div>
+					</a>
+		  		</div>
+
+		  		<div class="col-md-3 mb-4">
+		  			<a href="https://calculator-pt.netlify.com/" class="text-decoration-none" target="_blank">
+			  			<div class="card shadow" style="background-color: #6BB3DA;">
+							<img src="img/calculator.png" class="card-img-top img-fluid p-2" alt="...">
+							<div class="card-body" style="background-color:#6BB3DA;">
+						    	<h4 class="card-title">Kalkulator</h4>
+						  	</div>
+						</div>
+					</a>
+		  		</div>
+
+		  		<div class="col-md-3 mb-4">
+		  			<a href="https://restaurant-pt.netlify.app" class="text-decoration-none" target="_blank">
+			  			<div class="card shadow" style="background-color: #6BB3DA;">
+							<img src="img/restaurant.png" class="card-img-top img-fluid p-2" alt="...">
+							<div class="card-body" style="background-color:#6BB3DA;">
+						    	<h4 class="card-title">MyRestaurant</h4>
+						  	</div>
+						</div>
+					</a>
+		  		</div>
+
+		  	</div>
+	  	</div>
+	  	
+	  	
+
+
+	  	
+	  	
+	  	<!-- footer -->
+	  	<footer-component></footer-component>
+  	</div>
+    
+
+    <!-- vuejs -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+
+    <script>
+    	Vue.component('header-componen', {
+            template: `
+				<nav class="navbar bg-dark fixed-top shadow">
+				  <div class="container"> 
+				    <a class="navbar-brand" href="#" style="color:#6BB3DA;">
+				    	<h3>
+				    		<img src="https://raw.githubusercontent.com/MhmmdSyahputra/fun-y-n/main/PT-logo.png" width="60">&nbsp;&nbsp;My Projek Putrapt
+				    	</h3>
+				    </a>
+				  </div>
+				</nav>
+
+            `
+        })
+
+
+    	Vue.component('footer-component', {
+            template: `
+                        <footer style="margin-top:20vh">
+                        <hr>
+                            <h6 class="text-center">putrapt&copy; 2022</h6>
+                            <center><hr class="line"></center>
+                            <h2 class="text-center mb-3">
+                            	<a href="https://github.com/MhmmdSyahputra" target="_blank">
+                            		<i class="fa-brands fa-github"></i>
+                            	</a>
+                            	<a href="https://www.linkedin.com/in/muhammad-syahputra-65584a226/" target="_blank">
+                            		<i class="fa-brands fa-linkedin"></i>
+                            	</a>
+								<a href="https://www.instagram.com/mhmmdsyahputra_22/">
+									<i class="fa-brands fa-instagram"></i>
+								</a>
+                            </h2>
+                        </footer>
+                        `
+        })
+
+
+        const vm = new Vue({
+            el: '#app',
+            })
+    	
+    </script>
+
+  	<!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
