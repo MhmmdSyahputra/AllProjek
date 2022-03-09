@@ -19,6 +19,16 @@
 			.col-md-3 {
 				width: 50%;
 			}
+
+			svg {
+				height: 45%;
+			}
+		}
+
+		@media (min-width: 481px) and (max-width: 1024px) {
+			svg {
+				height: 45%;
+			}
 		}
 
 		body {
@@ -41,12 +51,7 @@
 		}
 
 		a {
-			color: #183153;
-		}
-
-		.line {
-			width: 10%;
-			text-align: center;
+			color: #dadada;
 		}
 
 		.content {
@@ -54,8 +59,9 @@
 		}
 
 		.footer {
+			color: #dadada;
 			padding: 0px;
-			background-color: #6BB3DA;
+			background-color: #212529;
 		}
 
 		section {
@@ -70,13 +76,17 @@
 
 	<!-- header -->
 	<section class="header">
-		<nav class="navbar bg-dark fixed-top shadow">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="margin-bottom: -150px;" class="fixed-top">
+			<path fill="#212529" fill-opacity="1" d="M0,64L1440,96L1440,0L0,0Z"></path>
+		</svg>
+		<nav class="navbar fixed-top">
 			<div class="container">
 				<a class="navbar-brand" href="#" style="color:#6BB3DA;">
 					<h3>
 						<img src="https://raw.githubusercontent.com/MhmmdSyahputra/fun-y-n/main/PT-logo.png"
 							width="60">&nbsp;&nbsp;My Projek Putrapt
 					</h3>
+
 				</a>
 			</div>
 		</nav>
@@ -87,6 +97,17 @@
 	<section class="content jumbotron">
 		<div class="container">
 			<div class="row mb-4">
+
+				<div class="col-md-3 mb-4">
+					<a href="http://muhammad-syahputra-cv.netlify.app/" class="text-decoration-none" target="_blank">
+						<div class="card shadow" style="background-color: #6BB3DA;">
+							<img src="img/my-cv.png" class="card-img-top img-fluid p-2" alt="...">
+							<div class="card-body" style="background-color:#6BB3DA;">
+								<h4 class="card-title">My CV</h4>
+							</div>
+						</div>
+					</a>
+				</div>
 
 				<div class="col-md-3 mb-4">
 					<a href="https://ya-or-no-pt.netlify.app/" class="text-decoration-none" target="_blank">
@@ -135,7 +156,7 @@
 			</div>
 		</div>
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-			<path fill="#6BB3DA" fill-opacity="1"
+			<path fill="#212529" fill-opacity="1"
 				d="M0,160L30,186.7C60,213,120,267,180,272C240,277,300,235,360,213.3C420,192,480,192,540,202.7C600,213,660,235,720,245.3C780,256,840,256,900,234.7C960,213,1020,171,1080,144C1140,117,1200,107,1260,122.7C1320,139,1380,181,1410,202.7L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
 			</path>
 		</svg>
@@ -148,12 +169,8 @@
 			<div class="row">
 				<div class="col">
 					<footer>
-						<hr>
-						<h6 class="text-center">putrapt&copy; 2022</h6>
-						<center>
-							<hr class="line">
-						</center>
-						<h2 class="text-center mb-3">
+
+						<h2 class="text-center mb-2">
 							<a href="https://github.com/MhmmdSyahputra" target="_blank" class="text-decoration-none">
 								<i class="fa-brands fa-github"></i>
 							</a>
@@ -166,6 +183,9 @@
 								<i class="fa-brands fa-instagram"></i>
 							</a>
 						</h2>
+
+						<hr>
+						<h6 class="text-center">putrapt&copy; 2022</h6>
 					</footer>
 				</div>
 			</div>
