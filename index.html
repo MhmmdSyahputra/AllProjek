@@ -16,12 +16,13 @@
 
 	<style>
 		@media (min-width: 320px) and (max-width: 480px) {
-			.col-md-3 {
+			.col-md-4 {
 				width: 50%;
 			}
 
+
 			.card-title {
-				font-size: 1.1rem;
+				font-size: 1rem;
 			}
 
 			.svg-head {
@@ -35,7 +36,7 @@
 				height: 45%;
 			}
 
-			.col-md-3 {
+			.col-md-4 {
 				width: 50%;
 			}
 		}
@@ -43,24 +44,6 @@
 		body {
 			background-color: #f0f0f0;
 			;
-		}
-
-		.card-title {
-			color: #6BB3DA;
-		}
-
-		.card,
-		.card-body,
-		.card-img-top {
-			border-radius: 15px;
-		}
-
-		.card-img-top {
-			filter: brightness(75%);
-		}
-
-		a {
-			color: #dadada;
 		}
 
 		.content-head {
@@ -72,7 +55,7 @@
 		.profil-img {
 			border: 5px solid white;
 			position: absolute;
-			top: 280px;
+			top: 260px;
 		}
 
 		.profil {
@@ -84,11 +67,61 @@
 			margin: 0px;
 		}
 
+
+		.card-title {
+			color: #6BB3DA;
+		}
+
+		.card {
+			border-top-left-radius: 15px;
+			border-top-right-radius: 15px;
+		}
+
+		.card {
+			border: 1px solid #F0F0F0;
+		}
+
+		.card-img-top {
+
+			border-top-left-radius: 13px;
+			border-top-right-radius: 13px;
+			filter: brightness(75%);
+		}
+
+		a {
+			color: #dadada;
+		}
+
 		.footer {
 			color: #dadada;
 			padding: 0px;
 			background-color: #212529;
 		}
+
+		/* color */
+
+
+		.card-body {
+			background-image: linear-gradient(to right, #232526 0%, #414345 51%, #232526 100%)
+		}
+
+		.card-body {
+			text-transform: uppercase;
+			transition: 0.5s;
+			background-size: 200% auto;
+			color: white;
+			box-shadow: 0 0 20px #eee;
+			display: block;
+		}
+
+		.card-body:hover {
+			background-position: right center;
+			/* change the direction of the change here */
+			color: #fff;
+			text-decoration: none;
+		}
+
+		/* color */
 
 		section {
 			padding-top: 5rem;
@@ -134,14 +167,10 @@
 
 		<div class="profil">
 			<br><br><br>
-			<h2 class="d-flex justify-content-center">Muhammad Syahputra</h2>
-			<h5 class="d-flex justify-content-center text-muted">Web Developer</h5>
+			<h2 class="d-flex justify-content-center nama">Muhammad Syahputra</h2>
+			<h5 class="d-flex justify-content-center text-muted"></h5>
 		</div>
-		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-			<path fill="white" fill-opacity="1"
-				d="M0,0L9.6,37.3C19.2,75,38,149,58,186.7C76.8,224,96,224,115,218.7C134.4,213,154,203,173,186.7C192,171,211,149,230,128C249.6,107,269,85,288,90.7C307.2,96,326,128,346,170.7C364.8,213,384,267,403,288C422.4,309,442,299,461,256C480,213,499,139,518,96C537.6,53,557,43,576,69.3C595.2,96,614,160,634,176C652.8,192,672,160,691,154.7C710.4,149,730,171,749,192C768,213,787,235,806,240C825.6,245,845,235,864,192C883.2,149,902,75,922,80C940.8,85,960,171,979,176C998.4,181,1018,107,1037,106.7C1056,107,1075,181,1094,208C1113.6,235,1133,213,1152,197.3C1171.2,181,1190,171,1210,176C1228.8,181,1248,203,1267,186.7C1286.4,171,1306,117,1325,117.3C1344,117,1363,171,1382,208C1401.6,245,1421,267,1430,277.3L1440,288L1440,0L1430.4,0C1420.8,0,1402,0,1382,0C1363.2,0,1344,0,1325,0C1305.6,0,1286,0,1267,0C1248,0,1229,0,1210,0C1190.4,0,1171,0,1152,0C1132.8,0,1114,0,1094,0C1075.2,0,1056,0,1037,0C1017.6,0,998,0,979,0C960,0,941,0,922,0C902.4,0,883,0,864,0C844.8,0,826,0,806,0C787.2,0,768,0,749,0C729.6,0,710,0,691,0C672,0,653,0,634,0C614.4,0,595,0,576,0C556.8,0,538,0,518,0C499.2,0,480,0,461,0C441.6,0,422,0,403,0C384,0,365,0,346,0C326.4,0,307,0,288,0C268.8,0,250,0,230,0C211.2,0,192,0,173,0C153.6,0,134,0,115,0C96,0,77,0,58,0C38.4,0,19,0,10,0L0,0Z">
-			</path>
-		</svg>
+
 
 	</section>
 
@@ -152,56 +181,56 @@
 		<div class="container">
 			<div class="row mb-4">
 
-				<div class="col-md-3 mb-4">
+				<div class="col-md-4 mb-1 p-2">
 					<a href="http://muhammad-syahputra-cv.netlify.app/" class="text-decoration-none" target="_blank">
 						<div class="card shadow bg-dark">
-							<img src="img/my-cv.png" class="card-img-top img-fluid p-2" alt="...">
+							<img src="img/my-cv.png" class="card-img-top img-fluid" alt="...">
 							<div class="card-body bg-dark">
-								<h4 class="card-title">My CV</h4>
+								<h6 class="card-title">My CV</h6>
 							</div>
 						</div>
 					</a>
 				</div>
 
-				<div class="col-md-3 mb-4">
+				<div class="col-md-4 mb-1 p-2">
 					<a href="https://ya-or-no-pt.netlify.app/" class="text-decoration-none" target="_blank">
 						<div class="card shadow bg-dark">
-							<img src="img/minta-maaf.png" class="card-img-top img-fluid p-2" alt="...">
+							<img src="img/minta-maaf.png" class="card-img-top img-fluid" alt="...">
 							<div class="card-body bg-dark">
-								<h4 class="card-title">Minta Maaf</h4>
+								<h6 class="card-title">Minta Maaf</h6>
 							</div>
 						</div>
 					</a>
 				</div>
 
-				<div class="col-md-3 mb-4">
+				<div class="col-md-4 mb-1 p-2">
 					<a href="http://text-jalan-pt.netlify.com/" class="text-decoration-none" target="_blank">
 						<div class="card shadow bg-dark">
-							<img src="img/text-jalan.png" class="card-img-top img-fluid p-2" alt="...">
+							<img src="img/text-jalan.png" class="card-img-top img-fluid" alt="...">
 							<div class="card-body bg-dark">
-								<h4 class="card-title">Text Jalan</h4>
+								<h6 class="card-title">Text Jalan</h6>
 							</div>
 						</div>
 					</a>
 				</div>
 
-				<div class="col-md-3 mb-4">
+				<div class="col-md-4 mb-1 p-2">
 					<a href="https://calculator-pt.netlify.com/" class="text-decoration-none" target="_blank">
 						<div class="card shadow bg-dark">
-							<img src="img/calculator.png" class="card-img-top img-fluid p-2" alt="...">
+							<img src="img/calculator.png" class="card-img-top img-fluid" alt="...">
 							<div class="card-body bg-dark">
-								<h4 class="card-title">Kalkulator</h4>
+								<h6 class="card-title">Kalkulator</h6>
 							</div>
 						</div>
 					</a>
 				</div>
 
-				<div class="col-md-3 mb-4">
+				<div class="col-md-4 mb-1 p-2">
 					<a href="https://restaurant-pt.netlify.app" class="text-decoration-none" target="_blank">
 						<div class="card shadow bg-dark">
-							<img src="img/restaurant.png" class="card-img-top img-fluid p-2" alt="...">
+							<img src="img/restaurant.png" class="card-img-top img-fluid" alt="...">
 							<div class="card-body bg-dark">
-								<h4 class="card-title">MyRestaurant</h4>
+								<h6 class="card-title">MyRestaurant</h6>
 							</div>
 						</div>
 					</a>
@@ -209,6 +238,8 @@
 
 			</div>
 		</div>
+
+
 		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 			<path fill="#212529" fill-opacity="1"
 				d="M0,160L30,186.7C60,213,120,267,180,272C240,277,300,235,360,213.3C420,192,480,192,540,202.7C600,213,660,235,720,245.3C780,256,840,256,900,234.7C960,213,1020,171,1080,144C1140,117,1200,107,1260,122.7C1320,139,1380,181,1410,202.7L1440,224L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z">
@@ -239,7 +270,7 @@
 						</h2>
 
 						<hr>
-						<h6 class="text-center">putrapt&copy; 2022</h6>
+						<h6 class="text-center">Copyright&copy; putrapt 2022</h6>
 					</footer>
 				</div>
 			</div>
@@ -247,11 +278,23 @@
 	</section>
 	<!-- footer -->
 
-
 	<!-- bootstrap -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
 		crossorigin="anonymous"></script>
+
+	<!-- GSAP -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/TextPlugin.min.js"></script>
+
+	<script>
+		gsap.registerPlugin(TextPlugin);
+		gsap.to('.text-muted', { duration: 3, text: 'Web Developer' });
+		gsap.from('.profil-img', { duration: 1, y: -300, opacity: 0, ease: "bounce.out" });
+		gsap.from('.nama', { duration: 3, y: 300, opacity: 0, ease: "bounce.out" });
+
+	</script>
+
 
 </body>
 
